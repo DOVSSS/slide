@@ -79,8 +79,11 @@ padding-top: 20px;
 
 
 
-   @media (max-width:768px) {
 
+   @media (max-width:768px) {
+      .swiper {
+        display: none;
+      }
     
 
     #card1 {
@@ -96,36 +99,22 @@ padding-top: 20px;
      }
    }
 
-   @media (max-width:320px) {
-   
-    .swiper {
-
-       
-        width: auto;
-        height:auto;
-      }
 
 
-   .windor {
-    display: none;
-   }
-    
-    
-   
 
-    .title {
-        
-        margin-left: 0;
-        margin-bottom: 35px;
-       
-    }
 
-    .btn {
+   @media (max-width:400px) {
+    .windor {
         display: none;
     }
+
+    .title{
+        margin-left: 15px;
+    }
+
+
+   
    }
 
   
-   .swiper {
-    display: none;
-}
+   

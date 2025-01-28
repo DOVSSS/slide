@@ -4,12 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalaz.css">
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+
+
+  <style>
+    .swiper {
+        width: 100%; /* Ширина контейнера */
+        height: 120px; /* Высота слайдера */
+    }
+
+    .swiper-slide {
+        width: 240px; /* Ширина каждого слайда */
+        height: 72px; /* Высота каждого слайда */
+        margin-right: 16px; /* Отступ между слайдами */
+        display: flex; /* Используем flex для размещения содержимого */
+        justify-content: center; /* Центрируем содержимое по горизонтали */
+        align-items: center; /* Центрируем содержимое по вертикали */
+        background: none; /* Цвет фона для слайда */
+        border-radius: 10px; /* Закругленные углы для слайда (опционально) */
+       /* Тень (опционально) */
+    }
+
+    .swiper-wrapper {
+        display: flex; /* Убедитесь, что обертка ведет себя как flex-контейнер */
+    }
+
+
+    .swiper-pagination {
+            margin-top: 16px; /* Отступ между пагинацией и слайдами */
+            text-align: center; /* Центрирование пагинации (опционально) */
+        }
+
+        .swiper-pagination-bullet {
+            background: gray; /* Цвет пагинации */
+            width: 12px; /* Увеличиваем ширину кружка */
+            height: 12px;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: darkgray; /* Цвет активной пагинации */
+        }
+
+    @media (min-width:420px) {
+      .swiper {
+        display: none;
+      }
+    }
+</style>
 
 </head>
 <body>
@@ -42,7 +90,7 @@
 
 
 <!-------------------------------------------------------------------------------------------------->
-<div class="swiper">
+<div class="swiper ">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
@@ -69,7 +117,27 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    <script src="scrypt.js"></script>
-
+     
+   <script>
+    const swiper = new Swiper('.swiper', {
+    slidesPerView: 1.5, // Или любое другое значение 
+    spaceBetween: 16,    // Отступ между слайдами
+    breakpoints: {
+        344: {
+            slidesPerView: 1.5, // 1.5 слайда при ширине от 768px
+            spaceBetween: 16,
+        },
+        200: {
+            slidesPerView: 1, // Показываем 1 слайд при ширине от 480px
+            spaceBetween: 16,
+        },
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+</script>
    
 </body>
 </html>
