@@ -34,12 +34,12 @@
 
 .title {
     width: 100%;
-    height: 56px;
+    height: 80px;
     margin-left: 50px;
     box-sizing: border-box;
     
     margin-bottom: 0;
-    margin-top: o;
+    margin-top: 0;
     font-family: regul;
     font-weight: 300;
     font-size: 23px;
@@ -47,6 +47,14 @@
     color: #7e7e82;
     background: linear-gradient(270deg, #f8f8f8 0%, #fff 100%);
     text-transform: uppercase;
+    padding-top: 26px;
+    padding-left: 10px;
+    border-top: solid 1px  #D9FFF5;
+
+
+}
+
+.svg {
     
 }
 
@@ -109,7 +117,7 @@ padding-top: 20px;
     }
 
     .title{
-        margin-left: 15px;
+        margin-left: 0px;
     }
 
 
