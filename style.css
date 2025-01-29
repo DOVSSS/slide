@@ -1,4 +1,11 @@
-  .windor {
+ 
+ body {
+    background: linear-gradient(to right,  #f8f8f8 0%, #fff 100%); 
+ }
+ 
+ 
+ 
+ .windor {
     background: linear-gradient(to right,  #f8f8f8 0%, #fff 100%);
    width: 100%;
    height: 100%;
@@ -11,7 +18,10 @@
     src: url(TTLakesCondensed-MediumItalic.woff);
   }
 
- 
+  @font-face {
+    font-family: hkjj;
+    src: url(TTLakesCompressed-Regular.woff);
+  }
 
 .container {
    display: flex;
@@ -42,7 +52,7 @@
     margin-top: 0;
     font-family: regul;
     font-weight: 300;
-    font-size: 23px;
+    font-size: 22px;
     letter-spacing:1px ;
     color: #7e7e82;
     background: linear-gradient(to right, #f8f8f8 0%, #fff 100%);
@@ -50,7 +60,7 @@
     padding-top: 26px;
    
     border-top: solid 1px  #D9FFF5;
-
+  border-bottom: solid 2px  #f8f8f8 ;
 
 }
 
@@ -64,21 +74,25 @@
 }
 
 .btn {
-margin-left: 50px;
+   
+margin-left: 60px;
 padding-top: 20px;
 
 }
 
 
 #toggleButton {
-    font-size: 18px;
+    font-family:  hkjj;
+    font-size: 20px;
     background: none;
     border: none;
     grid-area: 4/1;
 }
 
 .svg {
-  margin-right: 10px;
+    width: 9px;
+    height: 13px;
+  margin-right: 0px;
 }
 
 
