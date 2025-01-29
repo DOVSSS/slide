@@ -138,6 +138,30 @@
         clickable: true,
     },
 });
+
+
+
+
+let isChanged = false; // Флаг для отслеживания состояния текста
+const originalText = 'Показать все'; // Оригинальный текст
+const newText = 'Скрыть'; // Новый текст
+
+document.getElementById('toggleButton').onclick = () => {
+    const button = document.getElementById('toggleButton');
+    button.innerText = isChanged ? originalText : newText; // Меняем текст в зависимости от состояния
+    isChanged = !isChanged; // Переключаем состояние
+    const icon = document.querySelector('.svg');
+    icon.classList.toggle('rotated', !isRotated); // Переключаем класс
+    isRotated = !isRotated; // Переключаем состояние
+};
+
+
+
+let isRotated = false; // Флаг для отслеживания состояния
+
+
+
+
 </script>
    
 </body>
